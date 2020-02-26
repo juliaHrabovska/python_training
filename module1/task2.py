@@ -6,7 +6,7 @@ for n in numbers:
         temp = int(n)
         max_value = max(max_value, temp)
         min_value = min(min_value, temp)
-    except ValueError:
+    except (ValueError, TypeError):
         print(f"It is not possible to convert {n} to int")
 print(f"Max value from the list is {max_value}")
 print(f"Min value from the list is {min_value}")
